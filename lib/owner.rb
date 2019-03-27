@@ -29,4 +29,9 @@ class Owner
     return "I am a #{@species}."
   end
 
+  def pets
+    pets = Hash["cats" => [], "dogs" => [], "fishes" =>[]]
+    
+  end
+
 end
