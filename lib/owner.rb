@@ -29,11 +29,4 @@ class Owner
     return "I am a #{@species}."
   end
 
-  def pets
-    @pets = {
-      cats =>[]
-      dogs => []
-      fish => []
-    }
   end
-end
