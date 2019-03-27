@@ -30,7 +30,7 @@ class Owner
   end
 
   def pets
-    pets = Hash["cats" => [], "dogs" => [], "fishes" =>[]]
+    pets = Hash[:cats => [], :dogs => [], :fishes =>[]]
 
   end
 
