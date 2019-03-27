@@ -57,13 +57,15 @@ class Owner
   def feed_fish
     @@pets[:fishes].each {|fish| fish.mood = "happy"}
   end
+  
   def sell_pets
-    pets.each do |a, b|
-      b.map { |e| e.mood  = 'nervous' }
-      b.clear
+    @pets.collect do |species, instances|
+      instances.each do |pet|
+        pet.mood = "nervous"
+      end
+      instances.clear
     end
   end
-
 
   def list_pets
     "I have #{pets[:fishes].length} fish, #{pets[:dogs].length} dog(s), and #{pets[:cats].length} cat(s)."
