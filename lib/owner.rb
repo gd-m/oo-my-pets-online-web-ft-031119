@@ -61,7 +61,7 @@ class Owner
     pets.each do |a, b|
       b.map { |e| e.mood  = 'nervous' }
       b.clear
-    end    
+    end
   end
 
 
