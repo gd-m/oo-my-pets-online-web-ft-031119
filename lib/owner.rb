@@ -35,6 +35,6 @@ class Owner
       :dogs = []
       :fish = []
     }
-    
+
   end
 end
